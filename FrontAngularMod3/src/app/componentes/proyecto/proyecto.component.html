@@ -1,37 +1,38 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
-    <h1>PROYECTOS</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
-            Nuevo Proyecto
-        </button>
-        <br><br>
-    </div>
-    <tr *ngFor="let Proyecto of proyecto">
-        <div class="card-group">
-            <div class="card">
-                <img src={{Proyecto.imgP}} class="proyect1" alt="lacocinademama">
-                <div class="card-body">
-                    <h5 class="card-title">{{Proyecto.tituloP}}</h5>
-                    <p class="card-text">{{Proyecto.descripcionP}}</p>
-                </div>
-                <td>
-                    <h4 id="url">{{Proyecto.urlP}}</h4>
-                    <a href={{Proyecto.urlP}} target="_blank" class="btn btn-outline-info btn-sm">¿Quieres Conocerme?</a>
-                </td>
-                <div class="edit">
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-success" routerLink="/editproyecto/{{Proyecto.id}}">
-                            <i class="fa-solid fa-pen-to-square"></i></button>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
+        <h1>PROYECTOS</h1>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
+                Nuevo Proyecto
+            </button>
+            <br><br>
+        </div>
+        <tr *ngFor="let Proyecto of proyecto">
+            <div class="card-group">
+                <div class="card">
+                    <img src={{Proyecto.imgP}} class="proyect1" alt="lacocinademama">
+                    <div class="card-body">
+                        <h5 class="card-title">{{Proyecto.tituloP}}</h5>
+                        <p class="card-text">{{Proyecto.descripcionP}}</p>
+                    </div>
+                    <td>
+                        <h4 id="url">{{Proyecto.urlP}}</h4>
+                        <a href={{Proyecto.urlP}} target="_blank" class="btn btn-outline-info btn-sm">¿Quieres
+                            Conocerme?</a>
                     </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                            <i class="fa-solid fa-trash"></i></button>
-                    </td>
+                    <div class="edit">
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-success" routerLink="/editproyecto/{{Proyecto.id}}">
+                                <i class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                                <i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </div>
                 </div>
             </div>
-        </div> 
-    </tr>
-</div> 
-
-    
+        </tr>
+    </div>
+</div>

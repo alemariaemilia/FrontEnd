@@ -1,6 +1,7 @@
 .row {
   padding: 10px;
 }
+
 h1 {
   display: inline;
   font-family: 'Arima Madurai', cursive;
@@ -8,11 +9,14 @@ h1 {
   text-decoration: overline red;
   justify-content: center;
 }
-.btn.btn-dark{
-  margin-left: 10%;
+
+.btn.btn-dark {
+  margin-left: 280%;
+  width: 90%;
 }
+
 .circulo {
-  margin-top: 5%;
+  margin-top: 10%;
   width: 16%;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,7 @@ import { Skill } from '../../model/skill';
   styleUrls: ['./edit-skill.component.css']
 })
 export class EditSkillComponent implements OnInit {
-  
+
   skill: Skill = null;
 
   constructor(
@@ -29,7 +29,7 @@ export class EditSkillComponent implements OnInit {
     )
   }
 
-  onUpdate(){
+  onUpdate() {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillS.update(id, this.skill).subscribe(
       data => {

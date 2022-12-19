@@ -10,7 +10,7 @@ import { ProyectoService } from 'src/app/service/proyecto.service';
   styleUrls: ['./editproyecto.component.css']
 })
 export class EditproyectoComponent implements OnInit {
-  
+
   proyecto: Proyecto = null;
 
   constructor(
@@ -44,9 +44,9 @@ export class EditproyectoComponent implements OnInit {
       }
     )
   }
-    uploadImage($event:any){
-      const id = this.activatedRouter.snapshot.params['id'];
-      const name = "proyecto_" + id;
-      this.imageService.uploadImage($event, name)
-    }
+  uploadImage($event: any) {
+    const id = this.activatedRouter.snapshot.params['id'];
+    const name = "proyecto_" + id;
+    this.imageService.uploadImage($event, name)
   }
+}

@@ -12,37 +12,27 @@
 
               <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                 <div class="form-outline form-white mb-4">
-                  <input
-                    type="user"
-                    id="nombreUsuario"
-                    name="nombreUsuario"
-                    class="form-control form-control-lg" [(ngModel)]="nombreUsuario" name="nombreUsuario" required
-                  />
+                  <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+                    [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
                   <label class="form-label" for="nombreUsuario">Usuario</label>
                 </div>
 
                 <div class="form-outline form-white mb-4">
-                  <input
-                    type="password"
-                    id="password"
-                    class="form-control form-control-lg" [(ngModel)]="password" name="password" required
-                    />
-                  
-                  <label class="form-label" for="password"
-                    >Contraseña</label
-                  >
+                  <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password"
+                    name="password" required />
+
+                  <label class="form-label" for="password">Contraseña</label>
                 </div>
-               <button class="btn btn-outline-light btn-lg px-5" type="submit">
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">
                   INGRESO
                 </button>
-  </form>
+              </form>
 
             </div>
 
-            <div>
-              <p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
-              </p>
-            </div>
+            <div class="text-center">
+              <p>AME © - Alegre Maria Emilia -Portfolio - 2022. Santa Fe, Argentina - ARGENTINA PROGRAMA</p>
+          </div>
 
           </div>
         </div>

@@ -2,14 +2,19 @@
     margin: 5%;
     text-align: center;
     padding: 10px;
-    border: 5px solid rgb(116, 106, 106);   
+    border: 5px solid rgb(116, 106, 106);
 }
+
 .btn {
     margin-top: 3%;
 }
+
 form {
     display: inline;
     margin-top: 3%;
     font-family: 'Arima Madurai', cursive;
     text-align: center;
+}
+.text-center {
+    margin-top: 20%;
 }

@@ -14,7 +14,7 @@ export class NewproyectoComponent implements OnInit {
   imgP: string;
   urlP: string;
 
-  
+
 
   constructor(private proyectoS: ProyectoService, private router: Router) { }
 

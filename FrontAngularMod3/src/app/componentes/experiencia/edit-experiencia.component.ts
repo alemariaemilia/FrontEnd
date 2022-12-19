@@ -10,41 +10,41 @@ import { SExperienciaService } from '../../service/s-experiencia.service';
   styleUrls: ['./edit-experiencia.component.css'],
 })
 export class EditExperienciaComponent implements OnInit {
-  
+
   explab: Experiencia = null;
 
   constructor(
-    private sExperiencia: SExperienciaService, 
+    private sExperiencia: SExperienciaService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
     public imageService: ImageService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sExperiencia.detail(id).subscribe(
-      data =>{
+      data => {
         this.explab = data;
-      }, err =>{
+      }, err => {
         alert("Error al modificar experiencia");
         this.router.navigate(['']);
       }
     )
   }
 
-  onUpdate(): void{
+  onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.explab.imgE = this.imageService.url
     this.sExperiencia.update(id, this.explab).subscribe(
       data => {
         this.router.navigate(['']);
-      }, err =>{
-         alert("Error al modificar experiencia");
-         this.router.navigate(['']);
+      }, err => {
+        alert("Error al modificar experiencia");
+        this.router.navigate(['']);
       }
     )
   }
-  uploadImage($event:any){
+  uploadImage($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "experiencia_" + id;
     this.imageService.uploadImage($event, name)

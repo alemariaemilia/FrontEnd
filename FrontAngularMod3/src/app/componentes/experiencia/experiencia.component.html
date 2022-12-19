@@ -1,38 +1,40 @@
-<div class="row">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
-    <h1>EXPERIENCIA</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-            Nueva Experiencia
-        </button>
-        <br>
-    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
+        <h1>EXPERIENCIA</h1>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                Nueva Experiencia
+            </button>
+            <br>
+        </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11">
-        <table class="table">
-            <tbody>
-                <tr *ngFor="let Experiencia of explab">
-                    <td>
-                        <img src={{Experiencia.imgE}} class="img-fluid" width="900px" id="experiencia_">
-                    </td>
-                    <td>
-                        <h2>{{Experiencia.nombreE}}</h2>
-                    </td>
-                    <td>
-                        <h5>{{Experiencia.descripcionE}}</h5>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}">
-                            <i class="fa-solid fa-pen-to-square"></i></button>
-                    </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                            <i class="fa-solid fa-trash"></i></button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="col lg 1"></div>
+        <div class="col-lg-11">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Experiencia of explab">
+                        <td>
+                            <img src={{Experiencia.imgE}} class="img-fluid" width="900px" id="experiencia_">
+                        </td>
+                        <td>
+                            <h2>{{Experiencia.nombreE}}</h2>
+                        </td>
+                        <td>
+                            <h5>{{Experiencia.descripcionE}}</h5>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-success" routerLink="/editexp/{{Experiencia.id}}">
+                                <i class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                <i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 <br>
