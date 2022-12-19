@@ -2,6 +2,9 @@
   padding: 20px;
   text-align: center;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 h1 {
   display: inline;
@@ -13,16 +16,18 @@ h1 {
 h2 {
   margin-left: 5%;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 6%;
   font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
   color: black;
 }
 h5 {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   justify-content: center;
-  margin:2%;
+  font-size: 15px;
+  margin-top: 3%;
 }
 .img-fluid {
-  margin-top: 16%;
+  margin-top: 14%;
 }

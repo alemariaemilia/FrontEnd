@@ -1,4 +1,4 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,8 +9,6 @@ import { AppComponent } from './app.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
 import { BannerComponent } from './componentes/banner/banner.component';
-import { EditbannerComponent } from './componentes/banner/editbanner.component';
-import { NewbannerComponent } from './componentes/banner/newbanner.component';
 import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
@@ -29,6 +27,9 @@ import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { EditproyectoComponent } from './componentes/proyecto/editproyecto.component';
 import { NewproyectoComponent } from './componentes/proyecto/newproyecto.component';
 import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -43,8 +44,6 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
     LogoAPComponent,
 
     BannerComponent,
-    NewbannerComponent,
-    EditbannerComponent,
 
     AcercaDeComponent,
     EditAcercaDeComponent,
@@ -76,6 +75,9 @@ import { ProyectoComponent } from './componentes/proyecto/proyecto.component';
     HttpClientModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

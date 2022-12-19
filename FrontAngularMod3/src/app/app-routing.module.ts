@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de.component';
-import { EditbannerComponent } from './componentes/banner/editbanner.component';
-import { NewbannerComponent } from './componentes/banner/newbanner.component';
 import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
 import { ErrorComponent } from './componentes/error/error.component';
@@ -19,8 +17,6 @@ const routes: Routes = [
 { path: '', component: IndexComponent,},
 { path: 'login', component: LoginComponent },
 { path: 'editacercade/:id', component: EditAcercaDeComponent},
-{ path: 'newbanner', component: NewbannerComponent},
-{ path: 'editbanner/:id', component: EditbannerComponent},
 { path: 'nuevaexp', component: NewExperienciaComponent },
 { path: 'editexp/:id', component: EditExperienciaComponent},
 { path: 'nuevaedu', component: NeweducacionComponent},

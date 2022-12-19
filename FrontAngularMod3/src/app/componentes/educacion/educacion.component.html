@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
-    <h1>EDUCACION</h1>
+    <h1>EXPERIENCIA</h1>
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-            Nueva Educación
+            Nueva Educacion
         </button>
         <br>
     </div>
@@ -14,13 +14,13 @@
             <tbody>
                 <tr *ngFor="let Educacion of educacion">
                     <td>
+                        <img src={{Educacion.imgE}} class="img-fluid" width="900px" id="experiencia_">
+                    </td>
+                    <td>
                         <h2>{{Educacion.nombreE}}</h2>
                     </td>
                     <td>
                         <h5>{{Educacion.descripcionE}}</h5>
-                    </td>
-                    <td>
-                        <img src={{Educacion.imgE}} class="img-fluid" width="200px" id="educacion_">
                     </td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}">

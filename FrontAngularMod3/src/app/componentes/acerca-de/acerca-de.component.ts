@@ -26,11 +26,10 @@ export class AcercaDeComponent implements OnInit {
     }
   }
 
-  cargarPersona() {
+  cargarPersona(){
     this.personaService.detail(1).subscribe(
-      data => { 
-        this.persona = data; 
-      }
+      data => 
+      {this.persona = data}
     )
   }
 }

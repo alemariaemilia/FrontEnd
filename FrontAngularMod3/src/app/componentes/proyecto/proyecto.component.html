@@ -7,22 +7,19 @@
         </button>
         <br><br>
     </div>
-
-    <div class="col-lg-12">
-                <tr *ngFor="let Proyecto of proyecto">
-                    <td>
-                        <h2 id="titulo">{{Proyecto.tituloP}}</h2>
-                    </td>
-                    <td>
-                        <h5 id="descripcion">{{Proyecto.descripcionP}}</h5>
-                    </td>
-                    <td>
-                        <img src={{Proyecto.imgP}} class="img-fluid" width="200px" id="proyect1">
-                    </td>
-                    <td>
-                        <h4 id="url">{{Proyecto.urlP}}</h4>
-                        <a href="http://..." target="_blank" class="btn btn-outline-info btn-sm">¿Quieres Conocerme?</a>
-                    </td>
+    <tr *ngFor="let Proyecto of proyecto">
+        <div class="card-group">
+            <div class="card">
+                <img src={{Proyecto.imgP}} class="proyect1" alt="lacocinademama">
+                <div class="card-body">
+                    <h5 class="card-title">{{Proyecto.tituloP}}</h5>
+                    <p class="card-text">{{Proyecto.descripcionP}}</p>
+                </div>
+                <td>
+                    <h4 id="url">{{Proyecto.urlP}}</h4>
+                    <a href={{Proyecto.urlP}} target="_blank" class="btn btn-outline-info btn-sm">¿Quieres Conocerme?</a>
+                </td>
+                <div class="edit">
                     <td *ngIf="isLogged">
                         <button class="btn btn-success" routerLink="/editproyecto/{{Proyecto.id}}">
                             <i class="fa-solid fa-pen-to-square"></i></button>
@@ -31,7 +28,10 @@
                         <button class="btn btn-danger" (click)="delete(Proyecto.id)">
                             <i class="fa-solid fa-trash"></i></button>
                     </td>
-                </tr>
                 </div>
             </div>
-<br>
+        </div> 
+    </tr>
+</div> 
+
+    

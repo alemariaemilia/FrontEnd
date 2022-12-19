@@ -17,7 +17,7 @@ export class EditproyectoComponent implements OnInit {
     private proyectoS: ProyectoService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
-    public imageService: ImageService,
+    public imageService: ImageService
   ) { }
 
   ngOnInit(): void {
@@ -34,6 +34,7 @@ export class EditproyectoComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
+    this.proyecto.imgP = this.imageService.url
     this.proyectoS.update(id, this.proyecto).subscribe(
       data => {
         this.router.navigate(['']);
@@ -46,6 +47,6 @@ export class EditproyectoComponent implements OnInit {
     uploadImage($event:any){
       const id = this.activatedRouter.snapshot.params['id'];
       const name = "proyecto_" + id;
-      /*this.imageService.uploadImage($event, name)*/
+      this.imageService.uploadImage($event, name)
     }
   }

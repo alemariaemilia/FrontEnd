@@ -19,11 +19,14 @@
                     <input type="text" class="form-control" id="urlP" name="urlP" [(ngModel)]="proyecto.urlP" required>
                 </div>
                 <div class="form-group">
-                    <label for="imgP">IMG</label>
+                    <label for="img">ImagenP</label>
                     <input type="file" class="form-control" id="imgP" name="imgP"
-                        [(ngModel)]="proyecto.imgP" required>
+                        [(ngModel)]= "proyecto.imgP" (change) ="uploadImage($event)"
+                        accept=".jpg, .png, .jpeg">
                 </div>
-                
+                <div class="imagen">
+                    <img [src]="imageService.url">
+                </div>
                 <br>
                 <button class="btn btn-primary">
                     Editar Proyecto

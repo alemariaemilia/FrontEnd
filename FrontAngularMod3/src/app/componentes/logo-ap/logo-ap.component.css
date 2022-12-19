@@ -1,50 +1,50 @@
 body {
-    background-image: url(/Assets/IMG/FondoSobreMi.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -msn-background-size: cover;
-    overflow-x: hidden;
-  }
-  
-  /*INICIO SECCION NABVAR-HEADER*/
-  .navbar.navbar-expand-lg.bg-dark {
-    height: 110px;
-    justify-content: center;
-    background: rgb(34, 193, 195);
-    background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
-  }
-  
-  .navbar-brand {
-    justify-content: flex-start;
-    display: flex;
-  }
+  background-image: url(/Assets/IMG/FondoSobreMi.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  overflow-x: hidden;
+}
+
+/*INICIO SECCION NABVAR-HEADER*/
+.navbar.navbar-expand-lg.bg-dark {
+  height: 110px;
+  justify-content: center;
+  background: rgb(34, 193, 195);
+  background: -moz-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#22c1c3", endColorstr="#fdbb2d", GradientType=1);
+}
+
+.navbar-brand {
+  justify-content: flex-start;
+  display: flex;
+}
 /*ICONOS*/
 .list-group {
-    --bs-list-group-bg: transparent;
-    --bs-list-group-border-color: transparent;
-  }
-  
-  .fa-brands.fa-linkedin.fa-3x.text-white:hover {
-    --bs-text-opacity: 1;
-    color: #1713ec !important;
-  }
-  
-  .fa-brands.fa-square-github.fa-3x.text-white:hover {
-    --bs-text-opacity: 1;
-    color: #5b5a99 !important;
-  }
-  
-  .fa-solid.fa-user-lock.fa-3x:hover {
-    --bs-text-opacity: 1;
-    color: #000000 !important;
-  }
-  .btn.btn-outline-light {
-    margin-top: 5%;
-  }
+  --bs-list-group-bg: transparent;
+  --bs-list-group-border-color: transparent;
+}
+
+.fa-brands.fa-linkedin.fa-3x.text-white:hover {
+  --bs-text-opacity: 1;
+  color: #1713ec !important;
+}
+
+.fa-brands.fa-square-github.fa-3x.text-white:hover {
+  --bs-text-opacity: 1;
+  color: #5b5a99 !important;
+}
+
+.fa-solid.fa-user-lock.fa-3x:hover {
+  --bs-text-opacity: 1;
+  color: #000000 !important;
+}
+.btn.btn-outline-light {
+  margin-top: 5%;
+}
