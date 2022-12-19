@@ -1,0 +1,17 @@
+<div class="row">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <img src="/assets/IMG/APLogo.png" alt="LogoAP" class="w-25" href="/index.html">
+          <!--Social-->
+          <ul class="list-group list-group-horizontal d-flex justify-content">
+            <li class="list-group-item"><a href="https://www.linkedin.com/in/emiliaalegre/" target="_blank"><i
+                  class="fa-brands fa-square-github fa-3x text-white"></i></a></li>
+            <li class="list-group-item"><a href="https://github.com/MariaEmiliaAlegre/" target="_blank"><i
+                class="fa-brands fa-linkedin fa-3x text-white"></i></a></li>
+            <li class="list-group-item">
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+          </li>
+      </ul>
+    </div>
+

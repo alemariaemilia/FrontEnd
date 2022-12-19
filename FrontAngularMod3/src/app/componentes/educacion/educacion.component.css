@@ -1,0 +1,25 @@
+.row{
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+h1 {
+  display: inline;
+  margin-top: 3%;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  text-decoration: overline red;
+}
+h2 {
+  margin-left: 5%;
+  text-align: center;
+  margin-top: 3%;
+  font-family: 'Arima Madurai', cursive;
+  color: black;
+}
+h5 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+  margin:2%;
+}

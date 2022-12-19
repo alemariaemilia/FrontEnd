@@ -1,0 +1,13 @@
+
+.botones {
+  width: 15%;
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 2%;
+  background-color: rgba(240, 248, 255, 0.726);
+  border-radius: 13%;
+}
+p {
+ text-align: center;
+ margin: 2%; 
+}

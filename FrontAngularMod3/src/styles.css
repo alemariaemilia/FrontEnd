@@ -1,0 +1,12 @@
+/*COLOR BODY*/
+body {
+    background-image: url(assets/IMG/FondoSobreMi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+    overflow-x: hidden;
+  }
+    

@@ -1,0 +1,17 @@
+.row {
+  padding: 20px;
+}
+h1 {
+  display: inline;
+  font-family: 'Arima Madurai', cursive;
+  text-align: center;
+  text-decoration: overline red;
+  justify-content: center;
+}
+.btn.btn-dark{
+  margin-left: 10%;
+}
+.circulo {
+  margin-top: 5%;
+  text-align: center;
+}

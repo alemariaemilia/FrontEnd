@@ -1,0 +1,50 @@
+.row {
+    padding: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+/*Estilo de la foto de perfil*/
+@media (min-width: 576px) {
+    #fotodeperfil {
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 20%;
+        top: 530px;
+    }
+}
+
+@media (max-width: 575px) {
+    #fotodeperfil {
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 40%;
+        top: 500px;
+        width: 25%;
+    }
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: red;
+}
+
+.card {
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+.btn.btn-success {
+    margin-left: 3%;
+    margin-left: 80%;
+}
+
+.nomtit {
+    margin-top: 2%;
+    margin-left: 20%;
+}

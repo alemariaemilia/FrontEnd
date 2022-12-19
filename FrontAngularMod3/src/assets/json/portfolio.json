@@ -1,0 +1,144 @@
+{
+    "nombre": "Maria Emilia",
+    "apellido": "Alegre",
+    "titulo": "Full Stack Developer Jr.",
+    "acerca": "Soy de la Provincia de Santa Fe. Actualmente, resido en la Provincia de Córdoba. Soy Experta en Gestion de Relaciones Laborales, con experiencia en el sector administrativo. Me considero una persona Autodidacta, la principal virtud que me llevo a adentrarme en la Programacion. Estoy predispuesta a nuevos conocimientos y anhelo poder alcanzar los conocimientos necesarios para dedicarme a la Programacion FullStack.",
+    "imgPerfil": "../assets/IMG/perfil.jpeg",
+
+    "experiencias": [
+        {   
+            "id":1,
+            "empresa": "LA COCINA DE MAMA",
+            "logo": "../assets/IMG/lacocinademama.jpg",
+            "puesto": "Atte. Cliente. Negocio de Elaboracion y Venta de Comidas",
+            "descripcion": "Duración, cuatro Años. Me encargaba de la Atención al cliente, telefónica y de mostrador. Lista y Compras diarias. Pago a Proveedores y empleados. Caja, apertura y cierre. Rendición de Gastos. Método de Facturación, servicio de Afip. Entre otras labores. Sistema de venta (StockBase) Carga de datos, menú, precios, aumentos, se manejaba todo con sistema de impresión por comandera, cierres mensuales y anuales."
+        },
+        {
+            "id":2,
+            "empresa": "FLECHA BUS",
+            "logo": "../assets/IMG/flechabus.jpg",
+            "puesto": "Auxiliar de Abordo",
+            "descripcion": "Preparacion de la movilidad y servicio de abordo, para diferentes viajes de en cochess cama/semicama y suites. A Diferentes puntos del pais."
+        },
+        {
+            "id":3,
+            "titulo": "ATENTO CHACO/MOVISTAR",
+            "empresa": "CallCenter",
+            "logo": "../assets/IMG/atentochaco.jpg",
+            "puesto": "Atencion Telefonica, Empresa Movistar",
+            "descripcion": "Atencion Telefonica en CallCenter, para la Compañia Movistar. Me encarbaba de atender llamados y solucionar cualquier problema o consulta de los clientes de la empresa."
+        }
+    ],
+
+    "educacion": [
+        {
+            "id": 1,
+            "inicio": "Julio de 2021",
+            "fin": "Enero de 2023",
+            "titulo": "Argentina Programa #Yo Programo",
+            "logo": "../assets/IMG/argprog.jpg",
+            "descripcion": "#YoProgramo es un curso de la segunda etapa de Argentina Programa en el que adquirí las habilidades y herramientas basicas para convertirme en una programadora web full-stack junior."
+        },
+        {
+            "id": 2,
+            "inicio": "Agosto de 2021",
+            "fin": "Diciembre de 2022",
+            "titulo": "Codo a Codo Inicial",
+            "logo": "../assets/IMG/codoacodo1.jpg",
+            "descripcion": "Brinda herramientas que faciliten la inserción laboral en el sector IT, en mi caso elegi la modalidad, FullStack – Desarrollo Web (Java)."
+        },
+        {
+            "id": 3,
+            "inicio": "Octubre de 2021",
+            "fin": "Enero de 2022",
+            "titulo": "Argentina Programa #Se Programar",
+            "logo": "../assets/IMG/argprog.jpg",
+            "descripcion": "#SéProgramar es un curso introductorio en el que aprendi los fundamentos básicos de la programación para dar mis primeros pasos en el mundo tecnológico. Aprobado este, segui con el curso de la segunda etapa de Argentina Programa #YoProgramo, para continuar con mi trayecto formativo."
+        },
+        {
+            "id": 4,
+            "inicio": "Marzo de 2009",
+            "fin": "Diciembre de 2012",
+            "titulo": "Tecnica Superior en RR:HH",
+            "logo": "../assets/IMG/utn.jpg",
+            "descripcion": "Como Técnica Superior RRHH estoy preparada para un desempeño profesional en el ámbito de las empresas u organizaciones con una profesionalización técnica totalmente integrada. Capaz de utilizar las herramientas existentes en la organización y hacerlas funcionar eficaz y eficientemente, como así también es, el innovador, de nuevas estrategias para lograr un mejor desempeño de la administración de la organización."
+        },
+        {
+            "id": 4,
+            "inicio": "Marzo de 2009",
+            "fin": "Diciembre de 2012",
+            "titulo": "Ingles",
+            "logo": "../IMG/universidadpopular.jpg",
+            "descripcion": "Como Técnica Superior RRHH estoy preparada para un desempeño profesional en el ámbito de las empresas u organizaciones con una profesionalización técnica totalmente integrada. Capaz de utilizar las herramientas existentes en la organización y hacerlas funcionar eficaz y eficientemente, como así también es, el innovador, de nuevas estrategias para lograr un mejor desempeño de la administración de la organización."
+        }
+    ],
+
+    "skills": [
+        {
+            "id": 1,
+            "habilidad": "HTML",
+            "porcentaje": "60",
+            "color": "bg-warning"
+        },
+        {
+            "id": 2,
+            "habilidad": "CSS",
+            "porcentaje": "50",
+            "color": "bg-info"
+        },
+        {
+            "id": 3,
+            "habilidad": "Boostrap",
+            "porcentaje": "60",
+            "color": "bg-danger"
+        },
+        {
+            "id": 4,
+            "habilidad": "Angular",
+            "porcentaje": "50",
+            "color": "bg-success"
+        },
+        {
+            "id": 5,
+            "habilidad": "MySQL",
+            "porcentaje": "40",
+            "color": "bg-dark"
+        },
+        {
+            "id": 6,
+            "habilidad": "GitHub",
+            "porcentaje": "60",
+            "color": "bg-secondary"
+        },
+        {
+            "id": 7,
+            "habilidad": "Comunicacion Grupal",
+            "porcentaje": "50",
+            "color": "bg-primary"
+        }
+    ],
+
+    "proyectos": [
+        {
+            "id": 1,
+            "logo": "../assets/IMG/argprog.jpg",
+            "url": "urlAPLogo",
+            "titulo": "Portfolio Particular",
+            "descripcion": "Armado de Portfolio. Maquetado Estatico y Dinamico, Maquetado en Angular..."
+        },
+        {
+            "id": 2,
+            "logo": "../assets/IMG/argprog.jpg",
+            "url": "urlAPLogo",
+            "titulo": "Task-List",
+            "descripcion": "Armado de mi primer App en Angular. Una lista de Tareas"
+        },
+        {
+        "id": 3,
+        "logo": "../assets/IMG/argprog.jpg",
+            "url": "urlAPLogo",
+            "titulo": "Mi primer Pagina",
+            "descripcion": "Primer Pagina para un comercio. Pagina Estatica en HTML y CSS con Bootstrap."
+        }
+    ]
+}
