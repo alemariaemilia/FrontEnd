@@ -5,7 +5,6 @@
             <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">
                 Nueva Habilidad
             </button>
-            <br><br><br>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
             <circle-progress [percent]="(skill.porcentaje)" [radius]="80" [imageSrc]="''" [title]="(skill.nombre)"
