@@ -8,6 +8,7 @@ import { SExperienciaService } from '../../service/s-experiencia.service';
   templateUrl: './new-experiencia.component.html',
   styleUrls: ['./new-experiencia.component.css']
 })
+
 export class NewExperienciaComponent implements OnInit {
   nombreE: string = '';
   descripcionE: string = '';

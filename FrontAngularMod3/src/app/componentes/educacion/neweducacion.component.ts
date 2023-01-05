@@ -10,10 +10,9 @@ import { EducacionService } from '../../service/educacion.service';
 })
 
 export class NeweducacionComponent implements OnInit {
-  nombreE: string;
-  descripcionE: string;
-  imgE: string;
-
+  nombreE: string = '';
+  descripcionE: string = '';
+  imgE: string = '';
 
   constructor(private educacionS: EducacionService, private router: Router) { }
 

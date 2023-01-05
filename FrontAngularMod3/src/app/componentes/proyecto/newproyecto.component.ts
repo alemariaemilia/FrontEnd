@@ -9,10 +9,10 @@ import { ProyectoService } from '../../service/proyecto.service';
   styleUrls: ['./newproyecto.component.css']
 })
 export class NewproyectoComponent implements OnInit {
-  tituloP: string;
-  descripcionP: string;
-  imgP: string;
-  urlP: string;
+  tituloP: string = '';
+  descripcionP: string = '';
+  imgP: string = '';
+  urlP: string = '';
 
 
 
