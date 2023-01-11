@@ -2,5 +2,5 @@ export const environment = {
 
     production: true,
 
-    URL: 'https://portfolioame.onrender.com/'
+    URL: 'https://portfoliobackend-wn7a.onrender.com/'
 };
