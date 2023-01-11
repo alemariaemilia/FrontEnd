@@ -1,6 +1,6 @@
 /*COLOR BODY*/
 body {
-    background-image: url(assets/IMG/FondoSobreMi.jpg);
+    background-image: url(/src/assets/IMG/FondoSobreMi.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover;
