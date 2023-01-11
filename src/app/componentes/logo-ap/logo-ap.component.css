@@ -29,6 +29,11 @@
   color: #000000 !important;
 }
 
+.fa-solid.fa-user-unlock.fa-3x:hover {
+  --bs-text-opacity: 1;
+  color: #000000 !important;
+}
+
 .btn.btn-outline-light {
   margin-top: 5%;
 }

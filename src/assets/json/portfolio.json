@@ -2,15 +2,15 @@
     "nombre": "Maria Emilia",
     "apellido": "Alegre",
     "titulo": "Full Stack Developer Jr.",
-    "acerca": "Soy de la Provincia de Santa Fe. Actualmente, resido en la Provincia de Córdoba. Soy Experta en Gestion de Relaciones Laborales, con experiencia en el sector administrativo. Me considero una persona Autodidacta, la principal virtud que me llevo a adentrarme en la Programacion. Estoy predispuesta a nuevos conocimientos y anhelo poder alcanzar los conocimientos necesarios para dedicarme a la Programacion FullStack.",
+    "acerca": "Soy de la Provincia de Santa Fe. Actualmente, resido en la Provincia de Córdoba. Soy Experta en Gestión de Relaciones Laborales, con experiencia en el sector administrativo. Me considero una persona Autodidacta, la principal virtud que me llevo a adentrarme en la Programación. Estoy predispuesta a nuevos conocimientos y anhelo poder alcanzar los conocimientos necesarios para dedicarme a la Programación FullStack.",
     "imgPerfil": "../assets/IMG/perfil.jpeg",
 
     "experiencias": [
         {   
             "id":1,
-            "empresa": "LA COCINA DE MAMA",
+            "empresa": "LA COCINA DE MAMÁ",
             "logo": "../assets/IMG/lacocinademama.jpg",
-            "puesto": "Atte. Cliente. Negocio de Elaboracion y Venta de Comidas",
+            "puesto": "(Atte. Cliente. Negocio de Elaboración y Venta de Comidas) - 4 Años",
             "descripcion": "Duración, cuatro Años. Me encargaba de la Atención al cliente, telefónica y de mostrador. Lista y Compras diarias. Pago a Proveedores y empleados. Caja, apertura y cierre. Rendición de Gastos. Método de Facturación, servicio de Afip. Entre otras labores. Sistema de venta (StockBase) Carga de datos, menú, precios, aumentos, se manejaba todo con sistema de impresión por comandera, cierres mensuales y anuales."
         },
         {
@@ -37,7 +37,7 @@
             "fin": "Enero de 2023",
             "titulo": "Argentina Programa #Yo Programo",
             "logo": "../assets/IMG/argprog.jpg",
-            "descripcion": "#YoProgramo es un curso de la segunda etapa de Argentina Programa en el que adquirí las habilidades y herramientas basicas para convertirme en una programadora web full-stack junior."
+            "descripcion": "#YoProgramo es un curso de la segunda etapa de Argentina Programa en el que adquirí las habilidades y herramientas básicas para convertirme en una programadora web Full-Stack Jr."
         },
         {
             "id": 2,
@@ -45,7 +45,7 @@
             "fin": "Diciembre de 2022",
             "titulo": "Codo a Codo Inicial",
             "logo": "../assets/IMG/codoacodo1.jpg",
-            "descripcion": "Brinda herramientas que faciliten la inserción laboral en el sector IT, en mi caso elegi la modalidad, FullStack – Desarrollo Web (Java)."
+            "descripcion": "Brinda herramientas que faciliten la inserción laboral en el sector IT, en mi caso elegí la modalidad, FullStack – Desarrollo Web (Java)."
         },
         {
             "id": 3,
@@ -53,10 +53,18 @@
             "fin": "Enero de 2022",
             "titulo": "Argentina Programa #Se Programar",
             "logo": "../assets/IMG/argprog.jpg",
-            "descripcion": "#SéProgramar es un curso introductorio en el que aprendi los fundamentos básicos de la programación para dar mis primeros pasos en el mundo tecnológico. Aprobado este, segui con el curso de la segunda etapa de Argentina Programa #YoProgramo, para continuar con mi trayecto formativo."
+            "descripcion": "#SéProgramar es un curso introductorio en el que aprendí los fundamentos básicos de la programación para dar mis primeros pasos en el mundo tecnológico. Aprobado este, seguí con el curso de la segunda etapa de Argentina Programa #YoProgramo, para continuar con mi trayecto formativo."
         },
         {
             "id": 4,
+            "inicio": "Julio de 2022",
+            "fin": "Octubre de 2022",
+            "titulo": "BA Multiplica ((herramientas digitales y habilidades blandas)",
+            "logo": "../assets/IMG/bam.jpg",
+            "descripcion": "Entre las temáticas abordadas en el curso tome conocimientos de herramientas digitales, trabajo colaborativo, pensamiento creativo, análisis de datos, programación, diseño web, pensamiento lógico formal, perspectiva de género en ámbitos laborales, consumo responsable, empleo verde y sustentabilidad, empleabilidad, entre otras."
+        },
+        {
+            "id": 5,
             "inicio": "Marzo de 2009",
             "fin": "Diciembre de 2012",
             "titulo": "Tecnica Superior en RR:HH",
@@ -64,7 +72,7 @@
             "descripcion": "Como Técnica Superior RRHH estoy preparada para un desempeño profesional en el ámbito de las empresas u organizaciones con una profesionalización técnica totalmente integrada. Capaz de utilizar las herramientas existentes en la organización y hacerlas funcionar eficaz y eficientemente, como así también es, el innovador, de nuevas estrategias para lograr un mejor desempeño de la administración de la organización."
         },
         {
-            "id": 4,
+            "id": 6,
             "inicio": "Marzo de 2009",
             "fin": "Diciembre de 2012",
             "titulo": "Ingles",
