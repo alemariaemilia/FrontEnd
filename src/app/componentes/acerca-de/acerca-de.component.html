@@ -1,20 +1,21 @@
-<div class="container">
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
+<div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
     <td>
         <button class="btn btn-success" routerLink="/editacercade/1" *ngIf="isLogged">
             <i class="fa-solid fa-pen-to-square"></i></button>
     </td>
 </div>
 <div>
-    <img src={{persona.img}} class="img-fluid" width="200px" id="fotodeperfil">
+    <img src={{persona.img}} class="img-fluid" width="160px" id="fotodeperfil">
 </div>
 <br>
 <div class="nomtit">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <h1>{{persona.nombre}} {{persona.apellido}}</h1>
     <h2>Full Stack Developer Jr</h2>
 </div>
 <br><br><br>
-<div class="card col-xs-12 col-sm-12 col-md-4 col-lg-10">
+<div class="card">
     <div class="acerca">
         <h1>Acerca de mí</h1>
         <p>{{persona.descripcion}}</p>

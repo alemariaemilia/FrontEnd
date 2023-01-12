@@ -1,5 +1,12 @@
-.row {
-  padding: 10px;
+.row{
+  padding: 20px;
+}
+
+.circulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
 }
 
 h1 {
@@ -11,14 +18,12 @@ h1 {
 }
 
 .btn.btn-dark {
-  margin-left: 280%;
   width: 90%;
+  margin-left: 280%;
 }
 
 .circulo {
-  margin-top: 8%;
   width: 16%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+ 
 }

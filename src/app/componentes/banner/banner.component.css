@@ -24,11 +24,6 @@
         z-index: 3;
 }
 
-/*BOTON EDIT*/
-.btn.btn-success {
-        margin-left: 90%;
-}
-
 /*ANIMACION*/
 .bird {
         background-image: url(/assets/IMG/banner-birds.svg);

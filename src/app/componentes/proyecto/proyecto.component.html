@@ -1,38 +1,44 @@
-<div class="col-xs-12 col-sm-2 col-md-2 col-lg-11"></div>
-<div class="row">
-    <h1>PROYECTOS</h1>
-</div>
-<div class="col-lg-2">
-    <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
-        Nuevo Proyecto
-    </button>
-    <br><br>
-</div>
-<tr *ngFor="let Proyecto of proyecto">
-    <div class="edit">
-        <td *ngIf="isLogged">
-            <button class="btn btn-success" routerLink="/editproyecto/{{Proyecto.id}}">
-                <i class="fa-solid fa-pen-to-square"></i></button>
-        </td>
-        <td *ngIf="isLogged">
-            <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                <i class="fa-solid fa-trash"></i></button>
-        </td>
-    </div>
-    <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-                <img src={{Proyecto.imgP}} class="img-fluid rounded-start" alt="imgP">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">{{Proyecto.tituloP}}</h5>
-                    <p class="card-text">{{Proyecto.descripcionP}}</p>
-                    <a href={{Proyecto.urlP}} target="_blank" class="btn btn-outline-info btn-sm">¿Quieres
-                        Conocerme?
-                    </a>
-                </div>
-            </div>
+
+    <div class="row"> 
+        <h1>PROYECTOS</h1>
+        <div class="container">
+        <div class="col-sm-4 col-md-4 col-lg-4"></div>
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-dark" routerLink="/newproyecto" *ngIf="isLogged">
+                Nuevo Proyecto
+            </button>
+            <br><br>
+        </div>
+
+        <div class="col lg 1"></div>
+        <div class="col-lg-11">
+            <table class="table">
+                <tbody>
+                    <tr *ngFor="let Proyecto of proyecto">
+                        <td>
+                            <img src={{Proyecto.imgP}} class="card-img-top" alt="imgP">
+                        </td>
+
+                        <div class="card-body">
+                            <h5 class="card-title">{{Proyecto.tituloP}}</h5>
+                            <p class="card-text">{{Proyecto.descripcionP}}</p>
+                            <a href={{Proyecto.urlP}} target="_blank" class="btn btn-outline-info btn-sm">¿Quieres
+                                Conocerme?
+                            </a>
+                        </div>
+
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-success" routerLink="/editproyecto/{{Proyecto.id}}">
+                                <i class="fa-solid fa-pen-to-square"></i></button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                                <i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-</tr>
+
+</div>
