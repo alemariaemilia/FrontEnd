@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from "../../environments/environment";
 import { banner } from '../model/banner';
 
 @Injectable({
@@ -9,7 +8,7 @@ import { banner } from '../model/banner';
 })
 export class BannerService {
 
-  URL = environment.URL + 'banner/';
+  URL = 'https://portfoliobackend-wn7a.onrender.com/' + 'banner/';
 
   constructor(private httpClient: HttpClient) { }
 

@@ -3,8 +3,6 @@ export const environment = {
 
   production: false, 
 
-  URL: 'http://localhost:8080/',
-
   firebase: {
     projectId: 'mod3-frontfire',
     appId: '1:77836463722:web:b90544296ce5bb11356413',
