@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ImageService } from 'src/app/service/image.service';
+import { ImageexpeService } from 'src/app/service/imageexpe.service';
 import { Experiencia } from '../../model/experiencia';
 import { SExperienciaService } from '../../service/s-experiencia.service';
 
@@ -10,6 +10,7 @@ import { SExperienciaService } from '../../service/s-experiencia.service';
   styleUrls: ['./edit-experiencia.component.css'],
 })
 export class EditExperienciaComponent implements OnInit {
+[x: string]: any;
 
   explab: Experiencia = null;
 
@@ -17,7 +18,7 @@ export class EditExperienciaComponent implements OnInit {
     private sExperiencia: SExperienciaService,
     private activatedRouter: ActivatedRoute,
     private router: Router,
-    public imageService: ImageService
+    public imageexpeService: ImageexpeService
   ) { }
 
   ngOnInit(): void {
@@ -34,7 +35,7 @@ export class EditExperienciaComponent implements OnInit {
 
   onUpdate(): void {
     const id = this.activatedRouter.snapshot.params['id'];
-    this.explab.imgE = this.imageService.url
+    this.explab.imgE = this.imageexpeService.url
     this.sExperiencia.update(id, this.explab).subscribe(
       data => {
         this.router.navigate(['']);
@@ -47,6 +48,6 @@ export class EditExperienciaComponent implements OnInit {
   uploadImage($event: any) {
     const id = this.activatedRouter.snapshot.params['id'];
     const name = "experiencia_" + id;
-    this.imageService.uploadImage($event, name)
+    this.imageexpeService.uploadImage($event, name)
   }
 }
