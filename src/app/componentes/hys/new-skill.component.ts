@@ -11,7 +11,7 @@ import { Skill } from '../../model/skill';
 export class NewSkillComponent implements OnInit {
   nombre: string;
   porcentaje: number;
-  color: string;
+  color: "";
 
   constructor(private skillS: SkillService, private router: Router) { }
 

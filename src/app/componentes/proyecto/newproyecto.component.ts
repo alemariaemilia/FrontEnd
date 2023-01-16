@@ -13,6 +13,8 @@ export class NewproyectoComponent implements OnInit {
   descripcionP: string = '';
   imgP: string = '';
   urlP: string = '';
+  inicioP: string = '';
+  finalP: string = '';
 
 
 
@@ -22,7 +24,7 @@ export class NewproyectoComponent implements OnInit {
   }
 
   onCreate(): void {
-    const proyecto = new Proyecto(this.tituloP, this.descripcionP, this.imgP, this.urlP,);
+    const proyecto = new Proyecto(this.tituloP, this.descripcionP, this.imgP, this.urlP, this.inicioP,  this.finalP);
     this.proyectoS.save(proyecto).subscribe(
       data => {
         alert("Proyecto añadido correctamente");

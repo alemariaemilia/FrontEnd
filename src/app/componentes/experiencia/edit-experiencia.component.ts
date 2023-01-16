@@ -10,7 +10,7 @@ import { SExperienciaService } from '../../service/s-experiencia.service';
   styleUrls: ['./edit-experiencia.component.css'],
 })
 export class EditExperienciaComponent implements OnInit {
-[x: string]: any;
+
 
   explab: Experiencia = null;
 

@@ -9,10 +9,23 @@
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Descripcion</label>
-                    <textarea class="form-control" id="descripcionE" name="descripcionE"
-                        [(ngModel)]="descripcionE" required>
+                    <textarea class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE"
+                        required>
                         </textarea>
                 </div>
+                <p></p>
+                <div class="form-group">
+                    <label for="inicioE">Año de inicio</label>
+                    <input type="text" class="form-control" id="inicioE" name="inicioE" [(ngModel)]="inicioE"
+                        required>
+                </div>
+                <p></p>
+                <div class="form-group">
+                    <label for="finalE">Año de final</label>
+                    <input type="text" class="form-control" id="finalE" name="finalE" [(ngModel)]="finalE"
+                        required>
+                </div>
+                <p></p>
                 <div class="form-group">
                     <label for="imgE">Logo de la Institución</label>
                     <input type="file" class="form-control" id="imgE" name="imgE" [(ngModel)]="imgE" required>
@@ -25,5 +38,5 @@
     </div>
 </div>
 <div class="text-center">
-<p>AME © - Alegre Maria Emilia -Portfolio - 2022. Santa Fe, Argentina - ARGENTINA PROGRAMA</p>
+    <p>AME © - Alegre Maria Emilia -Portfolio - 2022. Santa Fe, Argentina - ARGENTINA PROGRAMA</p>
 </div>
