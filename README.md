@@ -20,6 +20,8 @@ Cabe destacar que cada seccion cuenta con una base de Crud, asi poder agregar, e
 
 Utilise para cargar la app Firebase. Tambien utilice de ella su Storage para poder almacenar las imagenes que implemente en todo el portfolio.
 
+Back subido en Render funcionando.
+
 Sin mas que aclarar te invito a que la conozcas... 
 
 # https://mod3-frontfire.web.app
